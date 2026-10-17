@@ -213,3 +213,29 @@ footer {
     color: #555;
     line-height: 1.7;
 }
+
+/* Responsive Design for Mobile Devices */
+@media (max-width: 768px) {
+    .main-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero h2 {
+        font-size: 1.8rem;
+    }
+
+    .menu-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-form {
+        padding: 1.2rem;
+    }
+}
