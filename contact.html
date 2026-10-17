@@ -25,10 +25,34 @@
         </nav>
     </header>
 
-    <!-- Contact Section -->
+    <!-- Contact Form Section -->
     <main class="container">
-        <h2>Naga Soo Xiriir</h2>
-        <p>Foomka xiriirka ayaa halkan la dhigi doonaa.</p>
+        <h2 class="page-title">Naga Soo Xiriir</h2>
+
+        <form action="#" method="POST" class="contact-form">
+            <div class="form-group">
+                <label for="name">Magacaaga Plss:</label>
+                <input type="text" id="name" name="name" placeholder="Geli magacaaga" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email-kaaga:</label>
+                <input type="email" id="email" name="email" placeholder="example@email.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="subject">Ujeeddada:</label>
+                <input type="text" id="subject" name="subject" placeholder="Ujeeddada fariinta">
+            </div>
+
+            <div class="form-group">
+                <label for="message">Fariintaada:</label>
+                <textarea id="message" name="message" rows="5" placeholder="Qor fariintaada halkan..."
+                    required></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Dir Fariinta</button>
+        </form>
     </main>
 
     <!-- Footer -->
