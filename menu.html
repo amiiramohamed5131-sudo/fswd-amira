@@ -1,386 +1,116 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="so">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amira Restaurant | Menu</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Menu - Amira Restaurant</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
+<body class="bg-gray-50 text-gray-800 font-sans flex flex-col min-h-screen">
 
-    <!-- Header & Navigation -->
-    <header class="main-header">
-        <div class="logo">
-            <h1>Amira Restaurant</h1>
-        </div>
-        <nav class="navbar">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="menu.html" class="active">Menu</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+    <!-- Header / Navigation -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="index.html" class="text-2xl font-bold text-rose-600">Amira Restaurant</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="text-gray-600 hover:text-rose-600 font-medium transition-colors">Home</a>
+                <a href="menu.html" class="text-rose-600 font-bold transition-colors">Menu</a>
+                <a href="about.html" class="text-gray-600 hover:text-rose-600 font-medium transition-colors">About
+                    Us</a>
+                <a href="contact.html"
+                    class="text-gray-600 hover:text-rose-600 font-medium transition-colors">Contact</a>
+            </div>
         </nav>
     </header>
 
-    <!-- Menu Section -->
-    <main class="container">
-
-        <!-- SECTION 1: CUNTOOYINKA -->
-        <div class="section-title">
-            <h2>Cuntooyinka (Foods)</h2>
-            <div class="title-underline"></div>
+    <!-- Main Content -->
+    <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="text-center mb-12">
+            <h1 class="text-4xl font-extrabold text-gray-900 mb-4">Cuntooyinka (Foods)</h1>
+            <div class="w-16 h-1 bg-rose-500 mx-auto rounded"></div>
         </div>
 
-        <div class="menu-grid">
-            <!-- 1. Bariis iyo Hilib -->
-            <div class="menu-card">
-                <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600" alt="Bariis iyo Hilib"
-                    class="menu-img">
-                <div class="menu-info">
-                    <h3>Bariis iyo Hilib</h3>
-                    <p>Bariis Soomaali leh hilib ari oo si dabiici ah loo kariyo.</p>
-                    <span class="price">$8.00</span>
+        <!-- Food Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+
+            <!-- Bariis iyo Hilib Card -->
+            <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                <img src="https://i.ibb.co/Lhb8mN3/bariis-hilib.jpg" alt="Bariis iyo Hilib"
+                    class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Bariis iyo Hilib</h3>
+                    <p class="text-gray-600 text-sm mb-4">Bariis Soomaali leh hilib ari oo si dabiici ah loo kariyo.</p>
+                    <span class="text-rose-500 font-bold text-lg">$8.00</span>
                 </div>
             </div>
 
-            <!-- 2. Baasto Suugo -->
-            <div class="menu-card">
-                <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?w=600" alt="Baasto Suugo"
-                    class="menu-img">
-                <div class="menu-info">
-                    <h3>Baasto Suugo</h3>
-                    <p>Baasto Talyaani leh suugo hilib geel ama digaag ah.</p>
-                    <span class="price">$7.00</span>
+            <!-- Baasto Suugo Card -->
+            <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&q=80&w=800"
+                    alt="Baasto Suugo" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Baasto Suugo</h3>
+                    <p class="text-gray-600 text-sm mb-4">Baasto Talyaani leh suugo hilib geel ama digaag ah.</p>
+                    <span class="text-rose-500 font-bold text-lg">$7.00</span>
                 </div>
             </div>
 
-            <!-- 3. Sambuus -->
-            <div class="menu-card">
-                <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?w=600" alt="Sambuus"
-                    class="menu-img">
-                <div class="menu-info">
-                    <h3>Sambuus</h3>
-                    <p>Sambuusi kuleyl ah oo hilib ama khudrad lagu buuxiyay (4 pcs).</p>
-                    <span class="price">$3.00</span>
+            <!-- Sambuus Card -->
+            <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&q=80&w=800"
+                    alt="Sambuus" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Sambuus</h3>
+                    <p class="text-gray-600 text-sm mb-4">Sambuusi kuleyl ah oo hilib ama khudrad lagu buuxiyay (4 pcs).
+                    </p>
+                    <span class="text-rose-500 font-bold text-lg">$3.00</span>
                 </div>
             </div>
 
-            <!-- 4. Fish & Chips -->
-            <div class="menu-card">
-                <img src="https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?w=600" alt="Fish & Chips"
-                    class="menu-img">
-                <div class="menu-info">
-                    <h3>Fish & Chips</h3>
-                    <p>Kaluun fried ah oo leh chips dabiici ah iyo sauce.</p>
-                    <span class="price">$9.50</span>
+            <!-- Fish & Chips Card -->
+            <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                <img src="https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&q=80&w=800"
+                    alt="Fish & Chips" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Fish & Chips</h3>
+                    <p class="text-gray-600 text-sm mb-4">Kalluun cusub oo la shiilay iyo chips ka samaysan barato
+                        dabiici ah.</p>
+                    <span class="text-rose-500 font-bold text-lg">$9.00</span>
                 </div>
             </div>
 
-            <!-- 5. Pizza Soomaali -->
-            <div class="menu-card">
-                <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=600" alt="Pizza Soomaali"
-                    class="menu-img">
-                <div class="menu-info">
-                    <h3>Pizza Soomaali</h3>
-                    <p>Pizza kuleyl ah oo leh cheese, hilib, iyo khudrad cusub.</p>
-                    <span class="price">$8.50</span>
+            <!-- Pizza Soomaali Card -->
+            <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&q=80&w=800"
+                    alt="Pizza Soomaali" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Pizza Soomaali</h3>
+                    <p class="text-gray-600 text-sm mb-4">Pizza guri lagaga samaysay hilib, basal, iyo cheese dabiici
+                        ah.</p>
+                    <span class="text-rose-500 font-bold text-lg">$10.00</span>
                 </div>
             </div>
 
-            <!-- 6. Mufo & Suugo -->
-            <div class="menu-card">
-                <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=600" alt="Mufo & Suugo"
-                    class="menu-img">
-                <div class="menu-info">
-                    <h3>Mufo & Suugo</h3>
-                    <p>Mufo kuleyl ah oo leh suugo hilib ama khudrad Soomaali ah.</p>
-                    <span class="price">$4.00</span>
+            <!-- Mufo & Suugo Card -->
+            <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                <img src="https://i.ibb.co/sKkWpxG/mufo-suugo.jpg" alt="Mufo & Suugo" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Mufo & Suugo</h3>
+                    <p class="text-gray-600 text-sm mb-4">Mufo Soomaali kuleyl ah iyo suugo digaag/hilib leh khudrad
+                        dabiici ah.</p>
+                    <span class="text-rose-500 font-bold text-lg">$6.50</span>
                 </div>
             </div>
 
-            <!-- 7. Digaag Duban -->
-            <div class="menu-card">
-                <img src="https://images.unsplash.com/photo-1598515214211-89d3c73ae83b?w=600" alt="Digaag Duban"
-                    class="menu-img">
-                <div class="menu-info">
-                    <h3>Digaag Duban</h3>
-                    <p>Digaag dabiici ah oo lagu dubay xawaash Soomaali ah.</p>
-                    <span class="price">$8.50</span>
-                </div>
-            </div>
-
-            <!-- 8. Beef Burger -->
-            <div class="menu-card">
-                <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600" alt="Beef Burger"
-                    class="menu-img">
-                <div class="menu-info">
-                    <h3>Beef Burger</h3>
-                    <p>Burger hilib lo'aad leh cheese, tomato, iyo lettuce.</p>
-                    <span class="price">$6.50</span>
-                </div>
-            </div>
-
-            <!-- 9. Kebab Hilib Ari -->
-            <div class="menu-card">
-                <img src="https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?w=600" alt="Kebab Hilib Ari"
-                    class="menu-img">
-                <div class="menu-info">
-                    <h3>Kebab Hilib Ari</h3>
-                    <p>Kebab hilib ari oo si xirfad leh loo dubay.</p>
-                    <span class="price">$7.50</span>
-                </div>
-            </div>
-
-            <!-- 10. Salad Khudrad Ah -->
-            <div class="menu-card">
-                <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=600" alt="Salad Khudrad Ah"
-                    class="menu-img">
-                <div class="menu-info">
-                    <h3>Salad Khudrad Ah</h3>
-                    <p>Salad cusub oo leh khudrad dabiici ah iyo dressing.</p>
-                    <span class="price">$4.50</span>
-                </div>
-            </div>
-
-            <!-- 11. Canjeero & Suugo -->
-            <div class="menu-card">
-                <img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=600" alt="Canjeero & Suugo"
-                    class="menu-img">
-                <div class="menu-info">
-                    <h3>Canjeero & Suugo</h3>
-                    <p>Canjeero Soomaali ah oo leh suugo hilib ama kaluun.</p>
-                    <span class="price">$3.50</span>
-                </div>
-            </div>
-
-            <!-- 12. Shawarma Digaag -->
-            <div class="menu-card">
-                <img src="https://images.unsplash.com/photo-1561651823-34feb02250e4?w=600" alt="Shawarma Digaag"
-                    class="menu-img">
-                <div class="menu-info">
-                    <h3>Shawarma Digaag</h3>
-                    <p>Shawarma digaag leh garlic sauce iyo khudrad.</p>
-                    <span class="price">$5.00</span>
-                </div>
-            </div>
-
-            <!-- 13. Maraq Hilib -->
-            <div class="menu-card">
-                <img src="https://images.unsplash.com/photo-1547592180-85f173990554?w=600" alt="Maraq Hilib"
-                    class="menu-img">
-                <div class="menu-info">
-                    <h3>Maraq Hilib</h3>
-                    <p>Maraq kuleyl ah oo hilib ari iyo xawaash leh.</p>
-                    <span class="price">$3.00</span>
-                </div>
-            </div>
-
-            <!-- 14. Club Sandwich -->
-            <div class="menu-card">
-                <img src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=600" alt="Club Sandwich"
-                    class="menu-img">
-                <div class="menu-info">
-                    <h3>Club Sandwich</h3>
-                    <p>Sandwich saddex qeybood ah oo digaag iyo egg leh.</p>
-                    <span class="price">$6.00</span>
-                </div>
-            </div>
-
-            <!-- 15. Macmacaan & Cake -->
-            <div class="menu-card">
-                <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=600" alt="Macmacaan & Cake"
-                    class="menu-img">
-                <div class="menu-info">
-                    <h3>Macmacaan & Cake</h3>
-                    <p>Slice cake oo macaan oo loogu talagalay cunto ka dib.</p>
-                    <span class="price">$3.50</span>
-                </div>
-            </div>
         </div>
-
-        <!-- SECTION 2: CABITAANNADA -->
-        <div class="section-title margin-top-lg">
-            <h2>Cabitaannada (Beverages)</h2>
-            <div class="title-underline"></div>
-        </div>
-
-        <div class="menu-grid">
-            <!-- 1. Caanaha Geela -->
-            <div class="menu-card">
-                <img src="https://images.unsplash.com/photo-1550583724-b2692b85b150?w=600" alt="Caanaha Geela"
-                    class="menu-img">
-                <div class="menu-info">
-                    <h3>Caanaha Geela</h3>
-                    <p>Caana geel dabiici ah oo aad u caafimaad badan.</p>
-                    <span class="price">$5.00</span>
-                </div>
-            </div>
-
-            <!-- 2. Shaah Soomaali -->
-            <div class="menu-card">
-                <img src="https://images.unsplash.com/photo-1576092768241-dec231879fc3?w=600" alt="Shaah Soomaali"
-                    class="menu-img">
-                <div class="menu-info">
-                    <h3>Shaah Soomaali</h3>
-                    <p>Shaah carfaya oo leh xawaash dabiici ah iyo caano.</p>
-                    <span class="price">$2.50</span>
-                </div>
-            </div>
-
-            <!-- 3. Casiirka Cambaha -->
-            <div class="menu-card">
-                <img src="https://images.unsplash.com/photo-1546173159-315724a31696?w=600" alt="Casiirka Cambaha"
-                    class="menu-img">
-                <div class="menu-info">
-                    <h3>Casiirka Cambaha</h3>
-                    <p>Casiir dabiici ah oo cambo cusub oo macaan laga tuujiyay.</p>
-                    <span class="price">$3.00</span>
-                </div>
-            </div>
-
-            <!-- 4. Casiirka Qaraha -->
-            <div class="menu-card">
-                <img src="https://images.unsplash.com/photo-1589733955941-5eeaf752f6dd?w=600" alt="Casiirka Qaraha"
-                    class="menu-img">
-                <div class="menu-info">
-                    <h3>Casiirka Qaraha</h3>
-                    <p>Casiir qaro dabiici ah oo qabow oo harraad gooye ah.</p>
-                    <span class="price">$3.00</span>
-                </div>
-            </div>
-
-            <!-- 5. Qahwa Soomaali -->
-            <div class="menu-card">
-                <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=600" alt="Qahwa Soomaali"
-                    class="menu-img">
-                <div class="menu-info">
-                    <h3>Qahwa Soomaali</h3>
-                    <p>Qahwa kuleyl ah oo la sameeyay bun iyo xawaash dabiici ah.</p>
-                    <span class="price">$2.00</span>
-                </div>
-            </div>
-
-            <!-- 6. Chocolate Milkshake -->
-            <div class="menu-card">
-                <img src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?w=600" alt="Chocolate Milkshake"
-                    class="menu-img">
-                <div class="menu-info">
-                    <h3>Chocolate Milkshake</h3>
-                    <p>Milkshake qabow oo ay ku dhex jirto cream iyo chocolate.</p>
-                    <span class="price">$4.50</span>
-                </div>
-            </div>
-
-            <!-- 7. Casiirka Liinta -->
-            <div class="menu-card">
-                <img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=600" alt="Casiirka Liinta"
-                    class="menu-img">
-                <div class="menu-info">
-                    <h3>Casiirka Liinta</h3>
-                    <p>Casiir liin dhanaan ah oo leh reexaan (mint) iyo baraaf.</p>
-                    <span class="price">$2.50</span>
-                </div>
-            </div>
-
-            <!-- 8. Casiirka Burtuqaalka -->
-            <div class="menu-card">
-                <img src="https://images.unsplash.com/photo-1613478223719-2ab802602423?w=600" alt="Casiirka Burtuqaalka"
-                    class="menu-img">
-                <div class="menu-info">
-                    <h3>Casiirka Burtuqaalka</h3>
-                    <p>Casiir burtuqaal dabiici ah oo 100% cusub.</p>
-                    <span class="price">$3.00</span>
-                </div>
-            </div>
-
-            <!-- 9. Avocado Smoothie -->
-            <div class="menu-card">
-                <img src="https://images.unsplash.com/photo-1525385133512-2f3bdd039054?w=600" alt="Avocado Smoothie"
-                    class="menu-img">
-                <div class="menu-info">
-                    <h3>Avocado Smoothie</h3>
-                    <p>Casiir afukaadho oo qaro weyn leh oo caano iyo babay leh.</p>
-                    <span class="price">$4.00</span>
-                </div>
-            </div>
-
-            <!-- 10. Strawberry Milkshake -->
-            <div class="menu-card">
-                <img src="https://images.unsplash.com/photo-1553787499-6f9133860278?w=600" alt="Strawberry Milkshake"
-                    class="menu-img">
-                <div class="menu-info">
-                    <h3>Strawberry Milkshake</h3>
-                    <p>Milkshake strawberry dabiici ah oo leh whipped cream.</p>
-                    <span class="price">$4.50</span>
-                </div>
-            </div>
-
-            <!-- 11. Iced Coffee -->
-            <div class="menu-card">
-                <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?w=600" alt="Iced Coffee"
-                    class="menu-img">
-                <div class="menu-info">
-                    <h3>Iced Coffee</h3>
-                    <p>Bun qabow oo leh caano iyo xammaat baraaf ah.</p>
-                    <span class="price">$3.50</span>
-                </div>
-            </div>
-
-            <!-- 12. Casiirka Cananaaska -->
-            <div class="menu-card">
-                <img src="https://images.unsplash.com/photo-1550258987-190a2d41a8ba?w=600" alt="Casiirka Cananaaska"
-                    class="menu-img">
-                <div class="menu-info">
-                    <h3>Casiirka Cananaaska</h3>
-                    <p>Casiir cananaas dabiici ah oo macaan oo dhiig kordhiya.</p>
-                    <span class="price">$3.00</span>
-                </div>
-            </div>
-
-            <!-- 13. Virgin Mojito -->
-            <div class="menu-card">
-                <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=600" alt="Virgin Mojito"
-                    class="menu-img">
-                <div class="menu-info">
-                    <h3>Virgin Mojito</h3>
-                    <p>Cabitaan qabow oo liin, reexaan, iyo soda ah.</p>
-                    <span class="price">$3.50</span>
-                </div>
-            </div>
-
-            <!-- 14. Biyo Sharaab -->
-            <div class="menu-card">
-                <img src="https://images.unsplash.com/photo-1560023907-5f339617ea30?w=600" alt="Biyo Sharaab"
-                    class="menu-img">
-                <div class="menu-info">
-                    <h3>Biyo Sharaab</h3>
-                    <p>Biyo nadiif ah oo dhalad ah oo qabow.</p>
-                    <span class="price">$1.00</span>
-                </div>
-            </div>
-
-            <!-- 15. Soft Drinks (Soda) -->
-            <div class="menu-card">
-                <img src="https://images.unsplash.com/photo-1622483767028-3f66f32aef97?w=600" alt="Coca Cola"
-                    class="menu-img">
-                <div class="menu-info">
-                    <h3>Soft Drinks (Soda)</h3>
-                    <p>Coca Cola, Fanta, ama Sprite qabow.</p>
-                    <span class="price">$1.50</span>
-                </div>
-            </div>
-        </div>
-
     </main>
 
     <!-- Footer -->
-    <footer>
-        <p>&copy; 2026 Amira Restaurant. All rights reserved.</p>
-        <div class="social-links">
-            <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Twitter</a>
+    <footer class="bg-gray-900 text-white py-8 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p>&copy; 2026 Amira Restaurant. All Rights Reserved.</p>
         </div>
     </footer>
 
