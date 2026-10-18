@@ -1,49 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="so">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Amira Restaurant - The best local and international dishes in town.">
-    <title>Amira Restaurant | Home</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Halane Restaurant - Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
+<body class="bg-gray-50 text-gray-800 font-sans flex flex-col min-h-screen">
 
-    <!-- Header & Navigation -->
-    <header class="main-header">
-        <div class="logo">
-            <h1>Amira Restaurant</h1>
-        </div>
-        <nav class="navbar">
-            <ul>
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+    <!-- Header / Navigation -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="index.html" class="text-2xl font-bold text-rose-600">Halane Restaurant</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="text-rose-600 font-bold transition-colors">Home</a>
+                <a href="menu.html" class="text-gray-600 hover:text-rose-600 font-medium transition-colors">Menu</a>
+                <a href="about.html" class="text-gray-600 hover:text-rose-600 font-medium transition-colors">About
+                    Us</a>
+                <a href="contact.html"
+                    class="text-gray-600 hover:text-rose-600 font-medium transition-colors">Contact</a>
+            </div>
         </nav>
     </header>
 
-    <!-- Hero Section with Online Image Background -->
-    <main>
-        <section class="hero-section">
-            <div class="hero-overlay">
-                <div class="hero-content">
-                    <h2>Ku Soo Dhawoow Amira Restaurant</h2>
-                    <p>Cuntooyin Soomaali iyo kuwa Caalami ah oo aad u xul ah.</p>
-                    <a href="menu.html" class="hero-btn">Eeg Menu-ga &rarr;</a>
-                </div>
+    <!-- Hero Section -->
+    <section class="relative bg-gray-900 text-white py-24">
+        <div class="absolute inset-0 overflow-hidden opacity-40">
+            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&q=80&w=1920"
+                alt="Restaurant Background" class="w-full h-full object-cover">
+        </div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-6">Ku Soo Dhawoow Halane Restaurant</h1>
+            <p class="text-lg md:text-xl text-gray-200 max-w-2xl mx-auto mb-8">Cuntooyinka hidaha iyo dhaqanka
+                Soomaaliyeed iyo kuwa casriga ah ee ugu macaan wadanka, adiga iyo qoyskaagaba ku soo dhowaada.</p>
+            <a href="menu.html"
+                class="bg-rose-600 hover:bg-rose-700 text-white font-bold px-8 py-4 rounded-full transition-colors shadow-lg">Eeg
+                Menu-ga (View Menu)</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">Waa Maxay Sababta Loo Doorto Halane Restaurant?</h2>
+            <div class="w-16 h-1 bg-rose-500 mx-auto rounded"></div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white p-8 rounded-2xl shadow-md text-center">
+                <div class="text-rose-600 text-4xl mb-4 font-bold">01</div>
+                <h3 class="text-xl font-bold mb-2">Cunto Nadiif ah</h3>
+                <p class="text-gray-600">Waxaan kuu diyaarinaynaa cuntooyin diyaarsan oo caafimaad qaba oo nadaafad sare
+                    leh.</p>
             </div>
-        </section>
-    </main>
+            <div class="bg-white p-8 rounded-2xl shadow-md text-center">
+                <div class="text-rose-600 text-4xl mb-4 font-bold">02</div>
+                <h3 class="text-xl font-bold mb-2">Adeeg Degdeg ah</h3>
+                <p class="text-gray-600">Shaqaale xirfad leh oo si hufan oo degdeg ah kuu adeegaya.</p>
+            </div>
+            <div class="bg-white p-8 rounded-2xl shadow-md text-center">
+                <div class="text-rose-600 text-4xl mb-4 font-bold">03</div>
+                <h3 class="text-xl font-bold mb-2">Qiimo Jaban</h3>
+                <p class="text-gray-600">Cuntooyin tayo leh oo qiimo macquul ah ku jooga qof walbana uu heli karo.</p>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
-    <footer>
-        <p>&copy; 2026 Amira Restaurant. All rights reserved.</p>
-        <div class="social-links">
-            <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Twitter</a>
+    <footer class="bg-gray-900 text-white py-8 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p>&copy; 2026 Halane Restaurant. All Rights Reserved.</p>
         </div>
     </footer>
 

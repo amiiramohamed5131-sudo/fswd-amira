@@ -1,88 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="so">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amira Restaurant | About Us</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>About Us - Halane Restaurant</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
+<body class="bg-gray-50 text-gray-800 font-sans flex flex-col min-h-screen">
 
-    <!-- Header & Navigation -->
-    <header class="main-header">
-        <div class="logo">
-            <h1>Amira Restaurant</h1>
-        </div>
-        <nav class="navbar">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="about.html" class="active">About Us</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+    <!-- Header / Navigation -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="index.html" class="text-2xl font-bold text-rose-600">Halane Restaurant</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="text-gray-600 hover:text-rose-600 font-medium transition-colors">Home</a>
+                <a href="menu.html" class="text-gray-600 hover:text-rose-600 font-medium transition-colors">Menu</a>
+                <a href="about.html" class="text-rose-600 font-bold transition-colors">About Us</a>
+                <a href="contact.html"
+                    class="text-gray-600 hover:text-rose-600 font-medium transition-colors">Contact</a>
+            </div>
         </nav>
     </header>
 
-    <!-- About Section Top -->
-    <main class="container">
-        <div class="about-hero-grid">
-            <div class="about-image-box">
-                <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800"
-                    alt="Amira Restaurant Interior" class="about-hero-img">
-            </div>
-            <div class="about-text-box">
-                <span class="sub-tag">KU SAABSAN</span>
-                <h2>Amira Restaurant</h2>
-                <div class="red-line"></div>
-                <p>Amira Restaurant waa meel cunto tayo leh, nadiif ah, oo leh jawi raaxo leh. Waxaan ku dadaallaa in
-                    aan siino macaamiishayada cunto macaan, adeeg heersare ah, iyo khibrad cunto oo aan la ilaawi karin.
-                </p>
-                <p>Haddii aad rabto cunto Somali, Caalami ah, ama cunto fudud, Amira Restaurant waa doorashada saxda ah.
-                </p>
-                <a href="menu.html" class="btn-more">Akhri Wax Dheeraad Ah &rarr;</a>
-            </div>
+    <!-- Main Content -->
+    <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="text-center mb-12">
+            <h1 class="text-4xl font-extrabold text-gray-900 mb-4">Ku Saabsan Halane Restaurant</h1>
+            <div class="w-16 h-1 bg-rose-500 mx-auto rounded"></div>
         </div>
 
-        <!-- Features & Benefits -->
-        <div class="section-title margin-top-lg">
-            <h2>Adeegyada & Faa'iidooyinka</h2>
-            <div class="title-underline"></div>
-        </div>
-
-        <div class="features-grid">
-            <div class="feature-card">
-                <div class="icon-circle"><span>&#127835;</span></div>
-                <h3>Cunto Tayo Leh</h3>
-                <p>Waxaan isticmaalnaa maaddooyin cusub oo tayo sare leh.</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-16">
+            <div>
+                <h2 class="text-2xl font-bold text-gray-900 mb-4">Tariikhdayada iyo Hadafkayada</h2>
+                <p class="text-gray-600 mb-4 leading-relaxed">
+                    Halane Restaurant waxaa la aas-aasay si ay bulshada Soomaaliyeed u siiso cuntooyin tayo sare leh oo
+                    lagu diyaariyay nadaafad iyo hufnaan sare. Waxaan caan ku nahay samaynta cuntooyinka hidaha iyo
+                    dhaqanka Soomaaliyeed iyo kuwa casriga ah.
+                </p>
+                <p class="text-gray-600 leading-relaxed">
+                    Hadafkayagu waa inaan macaamiishayada siinno dhadhan gaar ah iyo jawi raaxo leh oo ay ku cuni karaan
+                    cuntooyinka ugu macaan dadka ay jecelyihiin.
+                </p>
             </div>
-
-            <div class="feature-card">
-                <div class="icon-circle"><span>&#128737;</span></div>
-                <h3>Nadiif & Badbaado</h3>
-                <p>Nadaafad iyo badbaado ayaa mudnaantayada koowaad ah.</p>
-            </div>
-
-            <div class="feature-card">
-                <div class="icon-circle"><span>&#129309;</span></div>
-                <h3>Adeeg Wanaagsan</h3>
-                <p>Shaqaalaha diirran iyo adeeg degdeg ah.</p>
-            </div>
-
-            <div class="feature-card">
-                <div class="icon-circle"><span>&#128153;</span></div>
-                <h3>Jawi Raaxo Leh</h3>
-                <p>Jawi qurux badan oo ku habboon qoysaska iyo asxaabta.</p>
+            <div>
+                <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&q=80&w=800"
+                    alt="Halane Restaurant Interior" class="rounded-2xl shadow-lg w-full h-80 object-cover">
             </div>
         </div>
     </main>
 
     <!-- Footer -->
-    <footer>
-        <p>&copy; 2026 Amira Restaurant. All rights reserved.</p>
-        <div class="social-links">
-            <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Twitter</a>
+    <footer class="bg-gray-900 text-white py-8 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p>&copy; 2026 Halane Restaurant. All Rights Reserved.</p>
         </div>
     </footer>
 
