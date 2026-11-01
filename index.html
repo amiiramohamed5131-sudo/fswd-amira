@@ -8,7 +8,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-gray-50 text-gray-800 font-sans flex flex-col min-h-screen">
+<body class="bg-gray-50 text-gray-800 font-sans flex flex-col min-h-screen relative overflow-x-hidden">
 
     <!-- Header / Navigation -->
     <header class="bg-white shadow-sm sticky top-0 z-50">
@@ -16,7 +16,7 @@
             <!-- Logo -->
             <a href="index.html" class="text-2xl font-bold text-rose-600">Halane Restaurant</a>
 
-            <!-- Desktop Links (Waa la qariyaa marka daaqaddu yaraato iyadoo la isticmaalayo hidden md:flex) -->
+            <!-- Desktop Links -->
             <div class="hidden md:flex space-x-8 text-base">
                 <a href="index.html" class="text-rose-600 font-bold transition-colors">Home</a>
                 <a href="menu.html" class="text-gray-600 hover:text-rose-600 font-medium transition-colors">Menu</a>
@@ -26,8 +26,8 @@
                     class="text-gray-600 hover:text-rose-600 font-medium transition-colors">Contact</a>
             </div>
 
-            <!-- Hamburger Button (Waa ka muuqda shaashadaha yaryar oo keliya md:hidden) -->
-            <div class="md:hidden">
+            <!-- Hamburger Button -->
+            <div class="md:hidden z-50">
                 <button id="menu-btn" class="text-gray-700 hover:text-rose-600 focus:outline-none p-2">
                     <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                         xmlns="http://www.w3.org/2000/svg">
@@ -38,14 +38,28 @@
             </div>
         </nav>
 
-        <!-- Mobile Dropdown Menu (Waa menu-ga qarsoon ee soo baxaya marka la riixo batoonka) -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 px-4 pt-2 pb-4 space-y-2">
-            <a href="index.html" class="block py-2 text-rose-600 font-bold border-b border-gray-50">Home</a>
-            <a href="menu.html"
-                class="block py-2 text-gray-600 hover:text-rose-600 font-medium border-b border-gray-50">Menu</a>
-            <a href="about.html"
-                class="block py-2 text-gray-600 hover:text-rose-600 font-medium border-b border-gray-50">About Us</a>
-            <a href="contact.html" class="block py-2 text-gray-600 hover:text-rose-600 font-medium">Contact</a>
+        <!-- Overlay Background -->
+        <div id="overlay" class="fixed inset-0 bg-black bg-opacity-50 hidden z-40 transition-opacity"></div>
+
+        <!-- Slide-over Menu (Dhinaca Midig ka soo baxaya sida sawirka 2aad) -->
+        <div id="mobile-menu"
+            class="fixed top-0 right-0 w-64 h-full bg-white shadow-2xl z-50 transform translate-x-full transition-transform duration-300 ease-in-out flex flex-col p-6 space-y-6">
+            <!-- Close Button -->
+            <div class="flex justify-between items-center border-b pb-4">
+                <span class="text-xl font-bold text-rose-600">Menu</span>
+                <button id="close-btn"
+                    class="text-gray-700 hover:text-rose-600 focus:outline-none text-2xl font-bold">&times;</button>
+            </div>
+
+            <!-- Links -->
+            <div class="flex flex-col space-y-4">
+                <a href="index.html" class="py-2 text-rose-600 font-bold border-b border-gray-100">Home</a>
+                <a href="menu.html"
+                    class="py-2 text-gray-700 hover:text-rose-600 font-medium border-b border-gray-100">Menu</a>
+                <a href="about.html"
+                    class="py-2 text-gray-700 hover:text-rose-600 font-medium border-b border-gray-100">About Us</a>
+                <a href="contact.html" class="py-2 text-gray-700 hover:text-rose-600 font-medium">Contact</a>
+            </div>
         </div>
     </header>
 
@@ -95,14 +109,21 @@
         </div>
     </footer>
 
-    <!-- JavaScript to toggle Mobile Menu -->
+    <!-- JavaScript for Slide-over Menu Toggle -->
     <script>
         const menuBtn = document.getElementById('menu-btn');
+        const closeBtn = document.getElementById('close-btn');
         const mobileMenu = document.getElementById('mobile-menu');
+        const overlay = document.getElementById('overlay');
 
-        menuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
+        function toggleMenu() {
+            mobileMenu.classList.toggle('translate-x-full');
+            overlay.classList.toggle('hidden');
+        }
+
+        menuBtn.addEventListener('click', toggleMenu);
+        closeBtn.addEventListener('click', toggleMenu);
+        overlay.addEventListener('click', toggleMenu);
     </script>
 </body>
 
